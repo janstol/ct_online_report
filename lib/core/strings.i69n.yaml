@@ -1,0 +1,36 @@
+app:
+  name: ČT on-line report
+  about:
+    title: About
+  settings:
+    title: Settings
+    theme:
+      title: Theme
+      choose: Choose a theme
+      system: System (automatic)
+      light: Light
+      dark: Dark
+    reportUrl:
+      title: Report URL
+      enter: Enter a report URL
+    reportId:
+      title: Report ID
+      enter: Enter a report ID
+  report:
+    paginator:
+      page(int page): PAGE $page
+      previous: Previous page
+      next: Next page
+      first: First page
+      last: Last page
+  action:
+    cancel: Cancel
+    submit: Submit
+  helper:
+    defaultString(String value): "Default: $value"
+
+api:
+  error:
+    withCode(int code): Error $code
+    apiError: Network error!
+    apiErrorFetchFailed: Failed to fetch data. Please check your internet connection.
