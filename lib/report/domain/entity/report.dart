@@ -8,20 +8,23 @@ class Report extends Equatable {
   final int page;
   final int pages;
   final List<ReportPost> posts;
+  final DateTime timestamp;
 
   const Report({
     @required this.page,
     @required this.pages,
     @required this.posts,
+    @required this.timestamp,
   });
 
   const Report.empty()
       : page = 1,
         pages = 1,
-        posts = const [];
+        posts = const [],
+        timestamp = null;
 
-  // ignore: prefer_constructors_over_static_methods
-  static Report fromHTML(String responseBody) {
+  /// Creates [Report] from HTML.
+  factory Report.fromHTML(String responseBody) {
     int page, pages;
     final List<ReportPost> posts = [];
 
@@ -48,21 +51,36 @@ class Report extends Equatable {
       posts.add(ReportPost.fromHTML(header));
     }
 
-    return Report(page: page, pages: pages, posts: posts);
+    return Report(
+      page: page,
+      pages: pages,
+      posts: posts,
+      timestamp: DateTime.now(),
+    );
   }
 
-  Report copyWith({int page, int pages, List<ReportPost> posts}) {
+  Report copyWith({
+    int page,
+    int pages,
+    List<ReportPost> posts,
+    DateTime timestamp,
+  }) {
     return Report(
       page: page ?? this.page,
       pages: pages ?? this.pages,
       posts: posts ?? this.posts,
+      timestamp: timestamp ?? this.timestamp,
     );
   }
 
   @override
-  List<Object> get props => [page, pages, posts];
+  List<Object> get props => [page, pages, posts, timestamp];
 
   @override
-  String toString() =>
-      'Report[page; $page, pages: $pages, posts: ${posts.length}]';
+  // TODO: implement stringify
+  bool get stringify => true;
+
+//  @override
+//  String toString() =>
+//      'Report(page; $page, pages: $pages, posts: ${posts.length})';
 }

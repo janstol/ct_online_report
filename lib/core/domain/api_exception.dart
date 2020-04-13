@@ -1,9 +1,6 @@
-import 'package:ctonlinereport/core/domain/application_exception.dart';
-
 /// Exception for API.
-class ApiException implements ApplicationException {
+class ApiException implements Exception {
   /// Message.
-  @override
   final String message;
 
   /// HTTP status code.

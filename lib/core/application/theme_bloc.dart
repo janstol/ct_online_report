@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:bloc/bloc.dart';
 import 'package:ctonlinereport/core/application/theme_event.dart';
 import 'package:ctonlinereport/core/application/theme_state.dart';
-import 'package:ctonlinereport/report/domain/repository/theme_repository.dart';
+import 'package:ctonlinereport/core/domain/theme_repository.dart';
 import 'package:flutter/material.dart';
 
 class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {

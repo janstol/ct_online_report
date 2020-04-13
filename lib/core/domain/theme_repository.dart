@@ -1,3 +1,4 @@
+import 'package:ctonlinereport/core/domain/failures.dart';
 import 'package:ctonlinereport/core/domain/result.dart';
 import 'package:flutter/material.dart';
 
@@ -8,12 +9,12 @@ abstract class ThemeRepository {
   /// Gets saved [ThemeMode] from repository.
   ///
   /// Returns [Result.success] with [ThemeMode],
-  /// or [Result.error] with [Exception] if there was an error.
-  Future<Result<Exception, ThemeMode>> getThemeMode();
+  /// or [Result.error] with [Failure] if there was an error.
+  Future<Result<Failure, ThemeMode>> getThemeMode();
 
   /// Saves selected [themeMode] to repository.
   ///
   /// Returns [Result.success],
-  /// or [Result.error] with [Exception] if there was an error.
-  Future<Result<Exception, void>> saveThemeMode(ThemeMode themeMode);
+  /// or [Result.error] with [Failure] if there was an error.
+  Future<Result<Failure, void>> saveThemeMode(ThemeMode themeMode);
 }

@@ -1,17 +1,17 @@
 import 'package:ctonlinereport/core/application/theme_bloc.dart';
+import 'package:ctonlinereport/core/domain/theme_repository.dart';
+import 'package:ctonlinereport/core/infrastructure/api.dart';
 import 'package:ctonlinereport/core/infrastructure/theme_datasource_impl.dart';
 import 'package:ctonlinereport/core/infrastructure/theme_repository_impl.dart';
-import 'package:ctonlinereport/report/domain/repository/settings_repository.dart';
-import 'package:ctonlinereport/report/domain/repository/theme_repository.dart';
-import 'package:ctonlinereport/settings/application/settings_bloc.dart';
-
-import 'package:ctonlinereport/settings/infrastructure/settings_datasource_impl.dart';
-import 'package:ctonlinereport/core/infrastructure/api.dart';
+import 'package:ctonlinereport/report/application/report_bloc.dart';
+import 'package:ctonlinereport/report/domain/report_repository.dart';
 import 'package:ctonlinereport/report/infrastructure/remote_report_datasource.dart';
 import 'package:ctonlinereport/report/infrastructure/report_repository_impl.dart';
+import 'package:ctonlinereport/settings/application/settings_bloc.dart';
+import 'package:ctonlinereport/settings/application/settings_event.dart';
+import 'package:ctonlinereport/settings/domain/settings_repository.dart';
+import 'package:ctonlinereport/settings/infrastructure/settings_datasource_impl.dart';
 import 'package:ctonlinereport/settings/infrastructure/settings_repository_impl.dart';
-import 'package:ctonlinereport/report/domain/repository/report_repository.dart';
-import 'package:ctonlinereport/report/application/report_bloc.dart';
 import 'package:get_it/get_it.dart';
 import 'package:http/http.dart';
 
@@ -26,7 +26,8 @@ Future<void> setupServiceLocator() async {
   );
 
   serviceLocator.registerSingleton<SettingsBloc>(
-    SettingsBloc(serviceLocator.get<SettingsRepository>()),
+    SettingsBloc(serviceLocator.get<SettingsRepository>())
+      ..add(LoadSettingsEvent()),
   );
 
   /// Theme

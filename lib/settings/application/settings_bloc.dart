@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:bloc/bloc.dart';
 import 'package:ctonlinereport/core/constants.dart';
-import 'package:ctonlinereport/report/domain/repository/settings_repository.dart';
+import 'package:ctonlinereport/settings/domain/settings_repository.dart';
 import 'package:ctonlinereport/settings/application/settings_event.dart';
 import 'package:ctonlinereport/settings/application/settings_state.dart';
 
@@ -19,7 +19,7 @@ class SettingsBloc extends Bloc<SettingsEvent, SettingsState> {
   Stream<SettingsState> mapEventToState(SettingsEvent event) async* {
     if (event is LoadSettingsEvent) {
       final url = await _settingsRepository.getReportUrl();
-      final id = await _settingsRepository.getReportUrl();
+      final id = await _settingsRepository.getReportId();
       yield SettingsState(url.value, id.value);
     }
 

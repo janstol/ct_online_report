@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:ctonlinereport/core/keys.dart';
 import 'package:ctonlinereport/core/presentation/widget/error_mesage_widget.dart';
 import 'package:ctonlinereport/core/res.dart';
 import 'package:ctonlinereport/report/application/report_bloc.dart';
@@ -68,6 +69,7 @@ class _ReportPageState extends State<ReportPage> {
         title: Text(strings.app.name),
         actions: <Widget>[
           IconButton(
+            key: Keys.settingsButton,
             tooltip: strings.app.settings.title,
             icon: Icon(MdiIcons.cog),
             onPressed: () =>
@@ -85,7 +87,7 @@ class _ReportPageState extends State<ReportPage> {
         builder: (context, state) {
           if (state is ReportErrorState) {
             return Center(
-              child: ErrorMessageWidget(message: state.exception.toString()),
+              child: ErrorMessageWidget(failure: state.failure),
             );
           }
 
@@ -98,6 +100,7 @@ class _ReportPageState extends State<ReportPage> {
                 return _refreshCompleter.future;
               },
               child: ListView.builder(
+                key: Keys.reportPosts,
                 itemCount: report.posts.length,
                 controller: _scrollController,
                 physics: const AlwaysScrollableScrollPhysics(),
@@ -117,9 +120,9 @@ class _ReportPageState extends State<ReportPage> {
             _isVisible ? CrossFadeState.showFirst : CrossFadeState.showSecond,
         firstChild: BottomAppBar(
           color: Theme.of(context).primaryColor,
-          child: Paginator(),
+          child: const Paginator(),
         ),
-        secondChild: const SizedBox(height: 0),
+        secondChild: const SizedBox(key: Key('__S__'), height: 0),
       ),
     );
   }

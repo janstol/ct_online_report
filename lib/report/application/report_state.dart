@@ -1,6 +1,8 @@
+import 'package:ctonlinereport/core/domain/failures.dart';
 import 'package:ctonlinereport/report/domain/entity/report.dart';
 import 'package:equatable/equatable.dart';
 
+/// Base class that represents Report state.
 abstract class ReportState extends Equatable {
   const ReportState();
 }
@@ -17,19 +19,18 @@ class ReportLoadingState extends ReportState {
 
 class ReportSuccessState extends ReportState {
   final Report report;
-  final DateTime dateTime;
 
-  ReportSuccessState(this.report) : dateTime = DateTime.now();
+  const ReportSuccessState(this.report);
 
   @override
-  List<Object> get props => [report, dateTime];
+  List<Object> get props => [report];
 }
 
 class ReportErrorState extends ReportState {
-  final Exception exception;
+  final Failure failure;
 
-  const ReportErrorState(this.exception);
+  const ReportErrorState(this.failure);
 
   @override
-  List<Object> get props => [exception];
+  List<Object> get props => [failure];
 }

@@ -1,13 +1,15 @@
+import 'package:ctonlinereport/core/domain/failures.dart';
+import 'package:ctonlinereport/core/keys.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 
 /// Widget with error message.
 class ErrorMessageWidget extends StatelessWidget {
-  /// Error message to show.
-  final String message;
+  final Failure failure;
 
-  const ErrorMessageWidget({Key key, this.message}) : super(key: key);
+  const ErrorMessageWidget({@required this.failure})
+      : super(key: Keys.errorWidget);
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +28,7 @@ class ErrorMessageWidget extends StatelessWidget {
             height: 5,
           ),
           Text(
-            message,
+            failure.title,
             textAlign: TextAlign.center,
           ),
         ],

@@ -11,5 +11,5 @@ class ReportFetchEvent extends ReportEvent {
   const ReportFetchEvent(this.page, {this.refresh = false});
 
   @override
-  List<Object> get props => [page];
+  List<Object> get props => [page, refresh];
 }

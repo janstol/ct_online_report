@@ -63,7 +63,11 @@ class TestHelper {
       posts.add(parseReportPost(post));
     }
 
-    return const Report.empty()
-        .copyWith(page: page, pages: pages, posts: posts);
+    return Report(
+      page: page,
+      pages: pages,
+      posts: posts,
+      timestamp: DateTime(2020),
+    );
   }
 }

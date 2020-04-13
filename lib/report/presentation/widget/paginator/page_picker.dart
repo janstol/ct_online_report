@@ -1,3 +1,4 @@
+import 'package:ctonlinereport/core/keys.dart';
 import 'package:ctonlinereport/core/res.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -19,6 +20,7 @@ class PagePicker extends StatefulWidget {
 class _PagePickerState extends State<PagePicker> {
   int _selectedPage = 1;
   FixedExtentScrollController _scrollController;
+  int a;
 
   @override
   void initState() {
@@ -42,6 +44,7 @@ class _PagePickerState extends State<PagePicker> {
         Container(
           height: 150,
           child: CupertinoPicker(
+            key: Keys.pagePickerSelect,
             backgroundColor: Theme.of(context).primaryColorDark,
             itemExtent: 24,
             magnification: 1.3,
@@ -58,6 +61,7 @@ class _PagePickerState extends State<PagePicker> {
           ),
         ),
         OutlineButton(
+          key: Keys.pagePickerSubmit,
           onPressed: () => Navigator.pop(context, _selectedPage),
           borderSide: const BorderSide(color: Colors.white),
           child: Text(

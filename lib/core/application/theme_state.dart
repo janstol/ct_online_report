@@ -8,4 +8,7 @@ class ThemeState extends Equatable {
 
   @override
   List<Object> get props => [themeMode];
+
+  @override
+  bool get stringify => true;
 }

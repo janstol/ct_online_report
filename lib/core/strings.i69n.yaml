@@ -1,36 +1,47 @@
 app:
   name: ČT on-line report
   about:
-    title: About
+    title: O aplikaci
   settings:
-    title: Settings
+    title: Nastavení
     theme:
-      title: Theme
-      choose: Choose a theme
-      system: System (automatic)
-      light: Light
-      dark: Dark
+      title: Vzhled aplikace
+      choose: Vyberte vzhled aplikace
+      system: Výchozí nastavení systému
+      light: Světlý
+      dark: Tmavý
     reportUrl:
-      title: Report URL
-      enter: Enter a report URL
+      title: Adresa reportu
+      enter: Zadejte adresu reportu
     reportId:
-      title: Report ID
-      enter: Enter a report ID
+      title: Číslo reportu
+      enter: Zadejte číslo (ID) reportu
   report:
     paginator:
-      page(int page): PAGE $page
-      previous: Previous page
-      next: Next page
-      first: First page
-      last: Last page
+      page(int page): STRANA $page
+      previous: Předchozí strana
+      next: Následující strana
+      first: První strana
+      last: Poslední strana
   action:
-    cancel: Cancel
-    submit: Submit
+    cancel: Zrušit
+    submit: Potvrdit
   helper:
-    defaultString(String value): "Default: $value"
+    defaultString(String value): "Výchozí: $value"
 
-api:
-  error:
-    withCode(int code): Error $code
-    apiError: Network error!
-    apiErrorFetchFailed: Failed to fetch data. Please check your internet connection.
+failure:
+  general: Nastala chyba!
+  theme:
+    load: Nastala chyba při načítání vzhledu. Zkuste to prosím znovu.
+    save: Nastala chyba při ukládání vzhledu. Zkuste to prosím znovu.
+  settings:
+    load(String setting): "Nastala chyba při načítání nastavení \"$setting\". Zkuste to prosím znovu."
+    save(String setting): "Nastala chyba při ukládání nastavení \"$setting\". Zkuste to prosím znovu."
+  report:
+    load: Nastala chyba při načítání reportu.
+
+exception:
+  api:
+    general: Chyba sítě!
+    withCode(int code): Chyba $code
+    fetchFailed: Stažení dat selhalo. Zkontrolujte prosím své připojení k internetu a zkuste to znovu.

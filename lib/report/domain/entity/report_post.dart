@@ -30,8 +30,7 @@ class ReportPost extends Equatable {
     @required this.classes,
   });
 
-  // ignore: prefer_constructors_over_static_methods
-  static ReportPost fromHTML(dom.Element element) {
+  factory ReportPost.fromHTML(dom.Element element) {
     final htmlContent = element.nextElementSibling.innerHtml
         .trim()
         .replaceAll('\n', ' ')

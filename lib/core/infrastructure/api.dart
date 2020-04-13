@@ -1,5 +1,6 @@
 import 'dart:io';
 
+import 'package:ctonlinereport/core/constants.dart';
 import 'package:ctonlinereport/core/domain/api_exception.dart';
 import 'package:ctonlinereport/core/res.dart';
 import 'package:ctonlinereport/report/domain/entity/report.dart';
@@ -18,6 +19,9 @@ class ReportApi {
   ReportApi({Client client, SettingsBloc settingsBloc})
       : _client = client,
         _settingsBloc = settingsBloc {
+    reportUrl = defaultReportUrl;
+    reportId = defaultReportId;
+
     _settingsBloc.listen((state) {
       reportUrl = state.reportUrl;
       reportId = state.reportId;
@@ -48,13 +52,14 @@ class ReportApi {
     try {
       response = await _client.post(url, headers: headers, body: body);
     } on SocketException catch (e) {
+      debugPrint(e.toString());
       if (e.osError.errorCode == 7) {
-        throw ApiException(strings.api.error.apiErrorFetchFailed);
+        throw ApiException(strings.exception.api.fetchFailed);
       }
       throw ApiException(e.message);
     } on Exception catch (e) {
       debugPrint(e.toString());
-      throw ApiException(strings.api.error.apiError);
+      throw ApiException(strings.exception.api.general);
     }
 
     final statusCode = response.statusCode;
@@ -63,7 +68,7 @@ class ReportApi {
       return response.body;
     } else {
       throw ApiException(
-        strings.api.error.withCode(statusCode),
+        strings.exception.api.withCode(statusCode),
         statusCode,
       );
     }

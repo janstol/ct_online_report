@@ -1,3 +1,4 @@
+import 'package:ctonlinereport/core/domain/failures.dart';
 import 'package:ctonlinereport/report/domain/entity/report.dart';
 import 'package:ctonlinereport/core/domain/result.dart';
 
@@ -8,6 +9,6 @@ abstract class ReportRepository {
   /// Gets [Report] from repository.
   ///
   /// Returns [Result.success] with [Report],
-  /// or [Result.error] with [Exception] if there was an error.
-  Future<Result<Exception, Report>> getReport(int page);
+  /// or [Result.error] with [Failure] if there was an error.
+  Future<Result<Failure, Report>> getReport(int page);
 }

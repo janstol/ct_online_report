@@ -6,7 +6,7 @@ abstract class SettingsEvent extends Equatable {
 
 class LoadSettingsEvent extends SettingsEvent {
   @override
-  List<Object> get props => null;
+  List<Object> get props => [];
 }
 
 class ReportUrlSettingsChangedEvent extends SettingsEvent {
