@@ -1,10 +1,10 @@
 import 'package:bloc_test/bloc_test.dart';
-import 'package:ctonlinereport/core/domain/failures.dart';
-import 'package:ctonlinereport/core/res.dart';
-import 'package:ctonlinereport/report/application/report_bloc.dart';
-import 'package:ctonlinereport/report/application/report_event.dart';
-import 'package:ctonlinereport/report/application/report_state.dart';
-import 'package:ctonlinereport/report/infrastructure/report_repository_impl.dart';
+import 'package:ct_online_report/core/domain/failures.dart';
+import 'package:ct_online_report/core/res.dart';
+import 'package:ct_online_report/report/application/report_bloc.dart';
+import 'package:ct_online_report/report/application/report_event.dart';
+import 'package:ct_online_report/report/application/report_state.dart';
+import 'package:ct_online_report/report/infrastructure/report_repository_impl.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../../fakes/fake_remote_report_data_source.dart';

@@ -1,6 +1,6 @@
-import 'package:ctonlinereport/core/presentation/widget/radio_dialog.dart';
-import 'package:ctonlinereport/core/res.dart';
-import 'package:ctonlinereport/core/util/extensions/theme_mode_ext.dart';
+import 'package:ct_online_report/core/presentation/widget/radio_dialog.dart';
+import 'package:ct_online_report/core/res.dart';
+import 'package:ct_online_report/core/util/extensions/theme_mode_ext.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_test/flutter_test.dart';

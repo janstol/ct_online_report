@@ -1,8 +1,8 @@
-import 'package:ctonlinereport/core/constants.dart';
-import 'package:ctonlinereport/core/res.dart';
-import 'package:ctonlinereport/settings/application/settings_bloc.dart';
-import 'package:ctonlinereport/settings/application/settings_state.dart';
-import 'package:ctonlinereport/settings/presentation/widget/report_url_tile.dart';
+import 'package:ct_online_report/core/constants.dart';
+import 'package:ct_online_report/core/res.dart';
+import 'package:ct_online_report/settings/application/settings_bloc.dart';
+import 'package:ct_online_report/settings/application/settings_state.dart';
+import 'package:ct_online_report/settings/presentation/widget/report_url_tile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

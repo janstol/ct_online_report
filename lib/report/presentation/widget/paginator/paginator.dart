@@ -1,10 +1,10 @@
-import 'package:ctonlinereport/core/keys.dart';
-import 'package:ctonlinereport/core/res.dart';
-import 'package:ctonlinereport/report/application/report_bloc.dart';
-import 'package:ctonlinereport/report/application/report_event.dart';
-import 'package:ctonlinereport/report/application/report_state.dart';
-import 'package:ctonlinereport/report/domain/entity/report.dart';
-import 'package:ctonlinereport/report/presentation/widget/paginator/page_picker.dart';
+import 'package:ct_online_report/core/keys.dart';
+import 'package:ct_online_report/core/res.dart';
+import 'package:ct_online_report/report/application/report_bloc.dart';
+import 'package:ct_online_report/report/application/report_event.dart';
+import 'package:ct_online_report/report/application/report_state.dart';
+import 'package:ct_online_report/report/domain/entity/report.dart';
+import 'package:ct_online_report/report/presentation/widget/paginator/page_picker.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

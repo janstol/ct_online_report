@@ -1,5 +1,5 @@
-import 'package:ctonlinereport/core/constants.dart';
-import 'package:ctonlinereport/settings/infrastructure/settings_datasource.dart';
+import 'package:ct_online_report/core/constants.dart';
+import 'package:ct_online_report/settings/infrastructure/settings_datasource.dart';
 import 'package:mockito/mockito.dart';
 
 class FakeSettingsDataSource extends Fake implements SettingsDataSource {

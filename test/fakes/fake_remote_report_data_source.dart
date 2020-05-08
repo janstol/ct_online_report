@@ -1,5 +1,5 @@
-import 'package:ctonlinereport/report/domain/entity/report.dart';
-import 'package:ctonlinereport/report/infrastructure/reports_datasource.dart';
+import 'package:ct_online_report/report/domain/entity/report.dart';
+import 'package:ct_online_report/report/infrastructure/reports_datasource.dart';
 import 'package:mockito/mockito.dart';
 
 import '../fixtures/fixture.dart';

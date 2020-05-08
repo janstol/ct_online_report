@@ -1,4 +1,4 @@
-import 'package:ctonlinereport/report/application/report_event.dart';
+import 'package:ct_online_report/report/application/report_event.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 //ignore_for_file: prefer_const_constructors

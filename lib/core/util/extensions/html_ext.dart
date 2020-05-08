@@ -1,4 +1,4 @@
-import 'package:ctonlinereport/core/util/link_text_span.dart';
+import 'package:ct_online_report/core/util/link_text_span.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:html/dom.dart';

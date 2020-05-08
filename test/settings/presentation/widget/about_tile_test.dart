@@ -1,5 +1,5 @@
-import 'package:ctonlinereport/core/res.dart';
-import 'package:ctonlinereport/settings/presentation/widget/about_tile.dart';
+import 'package:ct_online_report/core/res.dart';
+import 'package:ct_online_report/settings/presentation/widget/about_tile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';

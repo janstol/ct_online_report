@@ -1,8 +1,8 @@
-import 'package:ctonlinereport/core/domain/failures.dart';
-import 'package:ctonlinereport/core/domain/result.dart';
-import 'package:ctonlinereport/core/res.dart';
-import 'package:ctonlinereport/settings/domain/settings_repository.dart';
-import 'package:ctonlinereport/settings/infrastructure/settings_datasource.dart';
+import 'package:ct_online_report/core/domain/failures.dart';
+import 'package:ct_online_report/core/domain/result.dart';
+import 'package:ct_online_report/core/res.dart';
+import 'package:ct_online_report/settings/domain/settings_repository.dart';
+import 'package:ct_online_report/settings/infrastructure/settings_datasource.dart';
 
 class SettingsRepositoryImpl implements SettingsRepository {
   final SettingsDataSource _dataSource;

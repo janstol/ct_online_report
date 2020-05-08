@@ -35,8 +35,8 @@ failure:
     load: Nastala chyba při načítání vzhledu. Zkuste to prosím znovu.
     save: Nastala chyba při ukládání vzhledu. Zkuste to prosím znovu.
   settings:
-    load(String setting): "Nastala chyba při načítání nastavení \"$setting\". Zkuste to prosím znovu."
-    save(String setting): "Nastala chyba při ukládání nastavení \"$setting\". Zkuste to prosím znovu."
+    load(String setting): "Nastala chyba při načítání nastavení '$setting'. Zkuste to prosím znovu."
+    save(String setting): "Nastala chyba při ukládání nastavení '$setting'. Zkuste to prosím znovu."
   report:
     load: Nastala chyba při načítání reportu.
 

@@ -1,5 +1,5 @@
-import 'package:ctonlinereport/core/keys.dart';
-import 'package:ctonlinereport/core/res.dart';
+import 'package:ct_online_report/core/keys.dart';
+import 'package:ct_online_report/core/res.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

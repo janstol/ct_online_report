@@ -1,4 +1,4 @@
-import 'package:ctonlinereport/report/domain/entity/report_post.dart';
+import 'package:ct_online_report/report/domain/entity/report_post.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
 import 'package:html/parser.dart';

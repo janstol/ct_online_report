@@ -1,9 +1,9 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:ctonlinereport/report/application/report_event.dart';
-import 'package:ctonlinereport/report/application/report_state.dart';
-import 'package:ctonlinereport/report/domain/report_repository.dart';
+import 'package:ct_online_report/report/application/report_event.dart';
+import 'package:ct_online_report/report/application/report_state.dart';
+import 'package:ct_online_report/report/domain/report_repository.dart';
 
 class ReportBloc extends Bloc<ReportEvent, ReportState> {
   final ReportRepository _reportRepository;

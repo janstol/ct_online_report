@@ -1,5 +1,5 @@
-import 'package:ctonlinereport/core/constants.dart';
-import 'package:ctonlinereport/core/util/extensions/html_ext.dart';
+import 'package:ct_online_report/core/constants.dart';
+import 'package:ct_online_report/core/util/extensions/html_ext.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';

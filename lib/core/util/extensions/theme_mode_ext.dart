@@ -1,4 +1,4 @@
-import 'package:ctonlinereport/core/res.dart';
+import 'package:ct_online_report/core/res.dart';
 import 'package:flutter/material.dart';
 
 /// [ThemeMode] extensions.

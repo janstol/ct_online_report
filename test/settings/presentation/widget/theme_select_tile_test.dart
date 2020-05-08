@@ -1,8 +1,8 @@
-import 'package:ctonlinereport/core/application/theme_bloc.dart';
-import 'package:ctonlinereport/core/application/theme_state.dart';
-import 'package:ctonlinereport/core/res.dart';
-import 'package:ctonlinereport/core/util/extensions/theme_mode_ext.dart';
-import 'package:ctonlinereport/settings/presentation/widget/theme_select_tile.dart';
+import 'package:ct_online_report/core/application/theme_bloc.dart';
+import 'package:ct_online_report/core/application/theme_state.dart';
+import 'package:ct_online_report/core/res.dart';
+import 'package:ct_online_report/core/util/extensions/theme_mode_ext.dart';
+import 'package:ct_online_report/settings/presentation/widget/theme_select_tile.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

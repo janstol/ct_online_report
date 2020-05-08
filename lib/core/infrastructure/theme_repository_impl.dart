@@ -1,8 +1,8 @@
-import 'package:ctonlinereport/core/domain/failures.dart';
-import 'package:ctonlinereport/core/domain/result.dart';
-import 'package:ctonlinereport/core/infrastructure/theme_datasource.dart';
-import 'package:ctonlinereport/core/res.dart';
-import 'package:ctonlinereport/core/domain/theme_repository.dart';
+import 'package:ct_online_report/core/domain/failures.dart';
+import 'package:ct_online_report/core/domain/result.dart';
+import 'package:ct_online_report/core/infrastructure/theme_datasource.dart';
+import 'package:ct_online_report/core/res.dart';
+import 'package:ct_online_report/core/domain/theme_repository.dart';
 import 'package:flutter/material.dart';
 
 class ThemeRepositoryImpl implements ThemeRepository {

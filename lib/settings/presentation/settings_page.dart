@@ -1,8 +1,8 @@
-import 'package:ctonlinereport/core/res.dart';
-import 'package:ctonlinereport/settings/presentation/widget/about_tile.dart';
-import 'package:ctonlinereport/settings/presentation/widget/report_id_tile.dart';
-import 'package:ctonlinereport/settings/presentation/widget/report_url_tile.dart';
-import 'package:ctonlinereport/settings/presentation/widget/theme_select_tile.dart';
+import 'package:ct_online_report/core/res.dart';
+import 'package:ct_online_report/settings/presentation/widget/about_tile.dart';
+import 'package:ct_online_report/settings/presentation/widget/report_id_tile.dart';
+import 'package:ct_online_report/settings/presentation/widget/report_url_tile.dart';
+import 'package:ct_online_report/settings/presentation/widget/theme_select_tile.dart';
 import 'package:flutter/material.dart';
 
 /// Page with app settings

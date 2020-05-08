@@ -1,8 +1,8 @@
-import 'package:ctonlinereport/core/presentation/widget/input_dialog.dart';
-import 'package:ctonlinereport/core/res.dart';
-import 'package:ctonlinereport/settings/application/settings_bloc.dart';
-import 'package:ctonlinereport/settings/application/settings_event.dart';
-import 'package:ctonlinereport/settings/application/settings_state.dart';
+import 'package:ct_online_report/core/presentation/widget/input_dialog.dart';
+import 'package:ct_online_report/core/res.dart';
+import 'package:ct_online_report/settings/application/settings_bloc.dart';
+import 'package:ct_online_report/settings/application/settings_event.dart';
+import 'package:ct_online_report/settings/application/settings_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';

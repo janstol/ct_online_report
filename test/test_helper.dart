@@ -1,7 +1,7 @@
-import 'package:ctonlinereport/core/constants.dart';
-import 'package:ctonlinereport/core/util/extensions/html_ext.dart';
-import 'package:ctonlinereport/report/domain/entity/report.dart';
-import 'package:ctonlinereport/report/domain/entity/report_post.dart';
+import 'package:ct_online_report/core/constants.dart';
+import 'package:ct_online_report/core/util/extensions/html_ext.dart';
+import 'package:ct_online_report/report/domain/entity/report.dart';
+import 'package:ct_online_report/report/domain/entity/report_post.dart';
 import 'package:html/dom.dart' as dom;
 import 'package:html/parser.dart' as parser;
 

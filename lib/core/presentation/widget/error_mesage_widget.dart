@@ -1,5 +1,5 @@
-import 'package:ctonlinereport/core/domain/failures.dart';
-import 'package:ctonlinereport/core/keys.dart';
+import 'package:ct_online_report/core/domain/failures.dart';
+import 'package:ct_online_report/core/keys.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';

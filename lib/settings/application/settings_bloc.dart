@@ -1,10 +1,10 @@
 import 'dart:async';
 
 import 'package:bloc/bloc.dart';
-import 'package:ctonlinereport/core/constants.dart';
-import 'package:ctonlinereport/settings/domain/settings_repository.dart';
-import 'package:ctonlinereport/settings/application/settings_event.dart';
-import 'package:ctonlinereport/settings/application/settings_state.dart';
+import 'package:ct_online_report/core/constants.dart';
+import 'package:ct_online_report/settings/domain/settings_repository.dart';
+import 'package:ct_online_report/settings/application/settings_event.dart';
+import 'package:ct_online_report/settings/application/settings_state.dart';
 
 class SettingsBloc extends Bloc<SettingsEvent, SettingsState> {
   final SettingsRepository _settingsRepository;

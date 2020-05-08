@@ -1,10 +1,10 @@
-import 'package:ctonlinereport/core/constants.dart';
-import 'package:ctonlinereport/core/domain/api_exception.dart';
-import 'package:ctonlinereport/core/infrastructure/api.dart';
-import 'package:ctonlinereport/core/res.dart';
-import 'package:ctonlinereport/report/domain/entity/report.dart';
-import 'package:ctonlinereport/settings/application/settings_bloc.dart';
-import 'package:ctonlinereport/settings/application/settings_state.dart';
+import 'package:ct_online_report/core/constants.dart';
+import 'package:ct_online_report/core/domain/api_exception.dart';
+import 'package:ct_online_report/core/infrastructure/api.dart';
+import 'package:ct_online_report/core/res.dart';
+import 'package:ct_online_report/report/domain/entity/report.dart';
+import 'package:ct_online_report/settings/application/settings_bloc.dart';
+import 'package:ct_online_report/settings/application/settings_state.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mockito/mockito.dart';
 

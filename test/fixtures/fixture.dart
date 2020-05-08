@@ -1,7 +1,7 @@
 import 'dart:io';
 
-import 'package:ctonlinereport/report/domain/entity/report.dart';
-import 'package:ctonlinereport/report/domain/entity/report_post.dart';
+import 'package:ct_online_report/report/domain/entity/report.dart';
+import 'package:ct_online_report/report/domain/entity/report_post.dart';
 import 'package:flutter/material.dart';
 import 'package:path/path.dart';
 

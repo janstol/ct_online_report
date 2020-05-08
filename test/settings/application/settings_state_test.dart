@@ -1,4 +1,4 @@
-import 'package:ctonlinereport/settings/application/settings_state.dart';
+import 'package:ct_online_report/settings/application/settings_state.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 //ignore_for_file: prefer_const_constructors

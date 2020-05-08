@@ -1,6 +1,6 @@
-import 'package:ctonlinereport/core/domain/failures.dart';
-import 'package:ctonlinereport/report/application/report_state.dart';
-import 'package:ctonlinereport/report/domain/entity/report.dart';
+import 'package:ct_online_report/core/domain/failures.dart';
+import 'package:ct_online_report/report/application/report_state.dart';
+import 'package:ct_online_report/report/domain/entity/report.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 //ignore_for_file: prefer_const_constructors

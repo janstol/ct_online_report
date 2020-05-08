@@ -1,10 +1,10 @@
-import 'package:ctonlinereport/core/domain/api_exception.dart';
-import 'package:ctonlinereport/core/domain/failures.dart';
-import 'package:ctonlinereport/core/res.dart';
-import 'package:ctonlinereport/report/infrastructure/reports_datasource.dart';
-import 'package:ctonlinereport/report/domain/entity/report.dart';
-import 'package:ctonlinereport/report/domain/report_repository.dart';
-import 'package:ctonlinereport/core/domain/result.dart';
+import 'package:ct_online_report/core/domain/api_exception.dart';
+import 'package:ct_online_report/core/domain/failures.dart';
+import 'package:ct_online_report/core/res.dart';
+import 'package:ct_online_report/report/infrastructure/reports_datasource.dart';
+import 'package:ct_online_report/report/domain/entity/report.dart';
+import 'package:ct_online_report/report/domain/report_repository.dart';
+import 'package:ct_online_report/core/domain/result.dart';
 
 class ReportRepositoryImpl implements ReportRepository {
   final ReportDataSource _dataSource;

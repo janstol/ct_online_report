@@ -1,6 +1,6 @@
-import 'package:ctonlinereport/core/constants.dart';
-import 'package:ctonlinereport/core/presentation/app_theme.dart';
-import 'package:ctonlinereport/report/domain/entity/report_post.dart';
+import 'package:ct_online_report/core/constants.dart';
+import 'package:ct_online_report/core/presentation/app_theme.dart';
+import 'package:ct_online_report/report/domain/entity/report_post.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 

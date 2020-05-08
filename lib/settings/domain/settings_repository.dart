@@ -1,5 +1,5 @@
-import 'package:ctonlinereport/core/domain/failures.dart';
-import 'package:ctonlinereport/core/domain/result.dart';
+import 'package:ct_online_report/core/domain/failures.dart';
+import 'package:ct_online_report/core/domain/result.dart';
 
 /// Contract (interface) for settings repository.
 ///

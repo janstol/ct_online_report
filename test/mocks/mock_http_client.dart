@@ -1,6 +1,6 @@
 import 'dart:io';
 
-import 'package:ctonlinereport/core/res.dart';
+import 'package:ct_online_report/core/res.dart';
 import 'package:http/http.dart';
 import 'package:http/testing.dart';
 

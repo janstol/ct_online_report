@@ -1,4 +1,4 @@
-import 'package:ctonlinereport/report/domain/entity/report_post.dart';
+import 'package:ct_online_report/report/domain/entity/report_post.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 

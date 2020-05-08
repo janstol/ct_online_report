@@ -1,4 +1,4 @@
-import 'package:ctonlinereport/report/presentation/widget/report_post_item.dart';
+import 'package:ct_online_report/report/presentation/widget/report_post_item.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
