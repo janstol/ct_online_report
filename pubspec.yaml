@@ -12,17 +12,17 @@ dependencies:
     sdk: flutter
 
   bloc: ^4.0.0
-  equatable: ^1.1.1
-  flutter_bloc: ^4.0.0
+  equatable: ^1.2.0
+  flutter_bloc: ^4.0.1
   get_it: ^4.0.2
   hive: ^1.4.1+1
   hive_flutter: ^0.3.0+2
   html: ^0.14.0+3
   http: ^0.12.1
   i69n: ^1.1.0
-  material_design_icons_flutter: ^4.0.5145
-  package_info: ^0.4.0+17
-  url_launcher: ^5.4.5
+  material_design_icons_flutter: ^4.0.5345
+  package_info: ^0.4.1
+  url_launcher: ^5.4.11
 
 dev_dependencies:
   flutter_test:

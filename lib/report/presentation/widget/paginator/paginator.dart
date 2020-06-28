@@ -53,7 +53,7 @@ class Paginator extends StatelessWidget {
                 onPressed: isLoading || report.pages <= 0
                     ? null
                     : () => _showPagePicker(context, report),
-                child: Text(
+                child: isLoading ? const SizedBox.shrink() : Text(
                   strings.app.report.paginator.page(report.page),
                   style: const TextStyle(color: Colors.white),
                 ),
