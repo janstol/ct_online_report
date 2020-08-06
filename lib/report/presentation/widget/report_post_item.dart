@@ -20,7 +20,7 @@ class ReportPostItem extends StatelessWidget {
           children: <Widget>[
             Column(
               children: <Widget>[
-                Text(post.time, style: Theme.of(context).textTheme.title),
+                Text(post.time, style: Theme.of(context).textTheme.headline6),
                 const SizedBox(height: 5),
                 _postIcon(context, post),
               ],

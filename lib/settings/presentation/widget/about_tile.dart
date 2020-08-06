@@ -15,7 +15,7 @@ class AboutTile extends StatelessWidget {
       future: PackageInfo.fromPlatform(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          appVersion = '${snapshot.data.version}';
+          appVersion = snapshot.data.version;
         }
 
         return AboutListTile(

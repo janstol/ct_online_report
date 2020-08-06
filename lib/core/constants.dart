@@ -1,7 +1,7 @@
 /// Report defaults
 const defaultReportUrl =
     'https://www.ceskatelevize.cz/sport/ajax/onlineReport/';
-const defaultReportId = '1105';
+const defaultReportId = '1109';
 
 /// Hive keys
 const hiveThemeModeKey = 'themeMode';

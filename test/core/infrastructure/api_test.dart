@@ -19,7 +19,7 @@ void main() {
   setUp(() {
     settingsBloc = MockSettingsBloc();
     when(settingsBloc.state).thenReturn(
-      SettingsState(defaultReportUrl, defaultReportId),
+      const SettingsState(defaultReportUrl, defaultReportId),
     );
     api = ReportApi(client: mockClient, settingsBloc: settingsBloc);
   });

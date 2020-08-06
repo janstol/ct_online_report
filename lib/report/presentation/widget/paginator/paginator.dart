@@ -30,7 +30,7 @@ class Paginator extends StatelessWidget {
             children: <Widget>[
               IconButton(
                 key: Keys.paginatorFirstPageButton,
-                icon: Icon(MdiIcons.pageFirst, size: 28),
+                icon: const Icon(MdiIcons.pageFirst, size: 28),
                 color: IconTheme.of(context).color,
                 onPressed: isLoading || report.page == 1
                     ? null
@@ -39,7 +39,7 @@ class Paginator extends StatelessWidget {
               ),
               IconButton(
                 key: Keys.paginatorPrevPageButton,
-                icon: Icon(MdiIcons.chevronLeft, size: 28),
+                icon: const Icon(MdiIcons.chevronLeft, size: 28),
                 color: IconTheme.of(context).color,
                 onPressed: isLoading || report.page == 1
                     ? null
@@ -60,7 +60,7 @@ class Paginator extends StatelessWidget {
               ),
               IconButton(
                 key: Keys.paginatorNextPageButton,
-                icon: Icon(MdiIcons.chevronRight, size: 28),
+                icon: const Icon(MdiIcons.chevronRight, size: 28),
                 color: IconTheme.of(context).color,
                 onPressed: isLoading || report.page == report.pages
                     ? null
@@ -71,7 +71,7 @@ class Paginator extends StatelessWidget {
               ),
               IconButton(
                 key: Keys.paginatorLastPageButton,
-                icon: Icon(MdiIcons.pageLast, size: 28),
+                icon: const Icon(MdiIcons.pageLast, size: 28),
                 color: IconTheme.of(context).color,
                 onPressed: isLoading || report.page == report.pages
                     ? null

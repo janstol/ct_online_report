@@ -15,11 +15,11 @@ class ReportIdTile extends StatelessWidget {
     final settingsBloc = Provider.of<SettingsBloc>(context);
 
     return BlocBuilder<SettingsBloc, SettingsState>(
-      condition: (previousState, state) =>
+      buildWhen: (previousState, state) =>
           previousState.reportId != state.reportId,
       builder: (BuildContext context, SettingsState state) {
         return ListTile(
-          leading: Icon(MdiIcons.identifier),
+          leading: const Icon(MdiIcons.identifier),
           title: Text(strings.app.settings.reportId.title),
           subtitle: Text(state.reportId),
           onTap: () => _onTileTap(context, settingsBloc, state.reportId),

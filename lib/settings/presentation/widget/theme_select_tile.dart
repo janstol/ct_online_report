@@ -15,11 +15,11 @@ class ThemeSelectTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<ThemeBloc, ThemeState>(
-      condition: (previousState, state) =>
+      buildWhen: (previousState, state) =>
           previousState.themeMode != state.themeMode,
       builder: (BuildContext context, ThemeState state) {
         return ListTile(
-          leading: Icon(MdiIcons.themeLightDark),
+          leading: const Icon(MdiIcons.themeLightDark),
           title: Text(strings.app.settings.theme.title),
           subtitle: Text(state.themeMode.modeToString()),
           onTap: () => _onThemeTileTap(context, state.themeMode),

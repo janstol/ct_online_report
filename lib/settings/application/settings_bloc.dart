@@ -2,18 +2,15 @@ import 'dart:async';
 
 import 'package:bloc/bloc.dart';
 import 'package:ct_online_report/core/constants.dart';
-import 'package:ct_online_report/settings/domain/settings_repository.dart';
 import 'package:ct_online_report/settings/application/settings_event.dart';
 import 'package:ct_online_report/settings/application/settings_state.dart';
+import 'package:ct_online_report/settings/domain/settings_repository.dart';
 
 class SettingsBloc extends Bloc<SettingsEvent, SettingsState> {
   final SettingsRepository _settingsRepository;
 
-  SettingsBloc(this._settingsRepository);
-
-  @override
-  SettingsState get initialState =>
-      const SettingsState(defaultReportUrl, defaultReportId);
+  SettingsBloc(this._settingsRepository)
+      : super(const SettingsState(defaultReportUrl, defaultReportId));
 
   @override
   Stream<SettingsState> mapEventToState(SettingsEvent event) async* {

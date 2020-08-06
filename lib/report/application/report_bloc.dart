@@ -8,10 +8,7 @@ import 'package:ct_online_report/report/domain/report_repository.dart';
 class ReportBloc extends Bloc<ReportEvent, ReportState> {
   final ReportRepository _reportRepository;
 
-  ReportBloc(this._reportRepository);
-
-  @override
-  ReportState get initialState => ReportInitialState();
+  ReportBloc(this._reportRepository): super(ReportInitialState());
 
   @override
   Stream<ReportState> mapEventToState(ReportEvent event) async* {

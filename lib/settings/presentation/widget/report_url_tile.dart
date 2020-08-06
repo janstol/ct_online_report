@@ -15,11 +15,11 @@ class ReportUrlTile extends StatelessWidget {
     final settingsBloc = Provider.of<SettingsBloc>(context);
 
     return BlocBuilder<SettingsBloc, SettingsState>(
-      condition: (previousState, state) =>
+      buildWhen: (previousState, state) =>
           previousState.reportUrl != state.reportUrl,
       builder: (BuildContext context, SettingsState state) {
         return ListTile(
-          leading: Icon(MdiIcons.link),
+          leading: const Icon(MdiIcons.link),
           title: Text(strings.app.settings.reportUrl.title),
           subtitle: Text(state.reportUrl),
           onTap: () => _onTileTap(context, settingsBloc, state.reportUrl),

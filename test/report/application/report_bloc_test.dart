@@ -25,27 +25,27 @@ void main() {
   });
 
   test('initial state should be ReportInitialState', () {
-    expect(reportBloc.initialState, ReportInitialState());
+    expect(reportBloc.state, ReportInitialState());
   });
 
-  blocTest<ReportBloc, ReportEvent, ReportState>(
+  blocTest<ReportBloc, ReportState>(
     'should return success state after loading state',
-    build: () async => reportBloc,
-    act: (bloc) async => bloc.add(const ReportFetchEvent(1)),
+    build: () => reportBloc,
+    act: (bloc) => bloc.add(const ReportFetchEvent(1)),
     expect: <ReportState>[ReportLoadingState(), reportSuccessState],
   );
 
-  blocTest<ReportBloc, ReportEvent, ReportState>(
+  blocTest<ReportBloc, ReportState>(
     'should return success state without loading state (refresh)',
-    build: () async => reportBloc,
-    act: (bloc) async => bloc.add(const ReportFetchEvent(1, refresh: true)),
+    build: () => reportBloc,
+    act: (bloc) => bloc.add(const ReportFetchEvent(1, refresh: true)),
     expect: <ReportState>[reportSuccessState],
   );
 
-  blocTest<ReportBloc, ReportEvent, ReportState>(
+  blocTest<ReportBloc, ReportState>(
     'should return error state ',
-    build: () async => reportBloc,
-    act: (bloc) async => bloc.add(const ReportFetchEvent(0)),
+    build: () => reportBloc,
+    act: (bloc) => bloc.add(const ReportFetchEvent(0)),
     expect: <ReportState>[ReportLoadingState(), reportErrorState],
   );
 }

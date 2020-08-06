@@ -18,13 +18,13 @@ void main() {
   });
 
   test('initial state should be system theme mode', () {
-    expect(themeBloc.initialState, const ThemeState(ThemeMode.system));
+    expect(themeBloc.state, const ThemeState(ThemeMode.system));
   });
 
-  blocTest<ThemeBloc, ThemeEvent, ThemeState>(
+  blocTest<ThemeBloc, ThemeState>(
     'should change theme and return success state with new theme',
-    build: () async => themeBloc,
-    act: (bloc) async => bloc
+    build: () => themeBloc,
+    act: (bloc) => bloc
       ..add(const ThemeChangedEvent(ThemeMode.dark))
       ..add(const ThemeChangedEvent(ThemeMode.light))
       ..add(const ThemeChangedEvent(ThemeMode.system)),

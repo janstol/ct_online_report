@@ -27,8 +27,8 @@ class App extends StatelessWidget {
         BlocProvider<ReportBloc>.value(value: serviceLocator.get<ReportBloc>()),
       ],
       child: BlocBuilder<ThemeBloc, ThemeState>(
-        bloc: _themeBloc,
-        condition: (previous, current) =>
+        cubit: _themeBloc,
+        buildWhen: (previous, current) =>
             previous.themeMode != current.themeMode,
         builder: (context, state) {
           return MaterialApp(
@@ -37,7 +37,7 @@ class App extends StatelessWidget {
             themeMode: state.themeMode,
             theme: AppTheme.light,
             darkTheme: AppTheme.dark,
-            localizationsDelegates: [
+            localizationsDelegates: const [
               GlobalMaterialLocalizations.delegate,
               GlobalWidgetsLocalizations.delegate
             ],

@@ -71,7 +71,7 @@ class _ReportPageState extends State<ReportPage> {
           IconButton(
             key: Keys.settingsButton,
             tooltip: strings.app.settings.title,
-            icon: Icon(MdiIcons.cog),
+            icon: const Icon(MdiIcons.cog),
             onPressed: () =>
                 Navigator.pushNamed(context, SettingsPage.routeName),
           )

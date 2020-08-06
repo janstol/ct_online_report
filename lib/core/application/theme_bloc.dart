@@ -7,13 +7,10 @@ import 'package:ct_online_report/core/domain/theme_repository.dart';
 import 'package:flutter/material.dart';
 
 class ThemeBloc extends Bloc<ThemeEvent, ThemeState> {
-  final ThemeMode _initialTheme;
   final ThemeRepository _themeRepository;
 
-  ThemeBloc(this._initialTheme, this._themeRepository);
-
-  @override
-  ThemeState get initialState => ThemeState(_initialTheme);
+  ThemeBloc(ThemeMode initialTheme, this._themeRepository)
+      : super(ThemeState(initialTheme));
 
   @override
   Stream<ThemeState> mapEventToState(ThemeEvent event) async* {

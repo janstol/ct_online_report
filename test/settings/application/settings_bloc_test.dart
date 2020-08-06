@@ -21,23 +21,23 @@ void main() {
 
   test('correct initial state', () {
     expect(
-      SettingsBloc(settingsRepository).initialState,
+      SettingsBloc(settingsRepository).state,
       const SettingsState(defaultReportUrl, defaultReportId),
     );
   });
 
-  blocTest<SettingsBloc, SettingsEvent, SettingsState>(
+  blocTest<SettingsBloc, SettingsState>(
     'should load settings',
-    build: () async =>
+    build: () =>
         settingsBloc..add(const ReportIdSettingsChangedEvent('1')),
-    act: (bloc) async => bloc.add(LoadSettingsEvent()),
+    act: (bloc) => bloc.add(LoadSettingsEvent()),
     expect: <SettingsState>[const SettingsState(defaultReportUrl, '1')],
   );
 
-  blocTest<SettingsBloc, SettingsEvent, SettingsState>(
+  blocTest<SettingsBloc, SettingsState>(
     'should save settings and emit new values',
-    build: () async => settingsBloc,
-    act: (bloc) async {
+    build: () => settingsBloc,
+    act: (bloc) {
       bloc
         ..add(const ReportIdSettingsChangedEvent('ID'))
         ..add(const ReportUrlSettingsChangedEvent('URL'));
