@@ -41,7 +41,7 @@ class _PagePickerState extends State<PagePicker> {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
-        Container(
+        SizedBox(
           height: 150,
           child: CupertinoPicker(
             key: Keys.pagePickerSelect,

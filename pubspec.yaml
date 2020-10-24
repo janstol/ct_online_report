@@ -1,9 +1,9 @@
 name: ct_online_report
 description: Ceska televize online report
-version: 1.0.0+1
+version: 1.0.0+2
 
 environment:
-  sdk: ">=2.9.0 <3.0.0"
+  sdk: ">=2.10.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -11,27 +11,27 @@ dependencies:
   flutter_localizations:
     sdk: flutter
 
-  bloc: ^6.0.1
-  equatable: ^1.2.3
-  flutter_bloc: ^6.0.1
-  get_it: ^4.0.4
-  hive: ^1.4.2
+  bloc: ^6.1.0
+  equatable: ^1.2.5
+  flutter_bloc: ^6.0.6
+  get_it: ^5.0.1
+  hive: ^1.4.4+1
   hive_flutter: ^0.3.1
-  html: ^0.14.0+3
+  html: ^0.14.0+4
   http: ^0.12.2
   i69n: ^1.1.0
-  material_design_icons_flutter: ^4.0.5345
-  package_info: ^0.4.1
-  url_launcher: ^5.5.0
+  material_design_icons_flutter: ^4.0.5755
+  package_info: ^0.4.3
+  url_launcher: ^5.7.8
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  bloc_test: ^7.0.0
+  bloc_test: ^7.0.6
   build_runner: any
-  lint: ^1.2.0
-  mockito: ^4.1.1
+  lint: ^1.3.0
+  mockito: ^4.1.3
 
 
 # For information on the generic Dart part of this file, see the
